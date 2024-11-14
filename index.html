@@ -1,332 +1,243 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Rinterio</title>
-        <!-- google font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-            rel="stylesheet"
-        />
-        <!-- font awsome cdn -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <!-- tailwind and daisyUI cdn -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
-            rel="stylesheet"
-            type="text/css"
-        />
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
-    <body class="bg-[#f4f4f4]">
-        <!-- header start -->
-        <header class="py-2 lg:py-24">
-            <nav class="w-10/12 mx-auto">
-                <div class="p-0 navbar">
-                    <div class="navbar-start">
-                        <a
-                            href="#"
-                            class="mx-4 px-2 py-1 text-center bg-[#ABEF5F] rounded-full"
-                            ><i class="-rotate-45 fa-solid fa-arrow-right"></i>
-                        </a>
-                        <h3
-                            class="text-3xl tracking-wider font-bold text-[#212121]"
-                        >
-                            Rinterio
-                        </h3>
-                    </div>
-                    <div class="hidden navbar-center lg:flex">
-                        <ul
-                            class="px-1 text-lg font-medium menu menu-horizontal"
-                        >
-                            <li
-                                class="transition duration-300 ease-in-out text-stone-950"
-                            >
-                                <a>Home</a>
-                            </li>
-                            <li
-                                class="transition duration-300 ease-in-out text-stone-400"
-                            >
-                                <a>Services</a>
-                            </li>
-                            <li
-                                class="transition duration-300 ease-in-out text-stone-400"
-                            >
-                                <a>Portfolio</a>
-                            </li>
-                            <li
-                                class="transition duration-300 ease-in-out text-stone-400"
-                            >
-                                <a>Blogs</a>
-                            </li>
-                            <li
-                                class="transition duration-300 ease-in-out text-stone-400"
-                            >
-                                <a>Contact Us</a>
-                            </li>
-                        </ul>
-                        <div class="flex items-center pl-32">
-                            <div>
-                                <button
-                                    class="btn btn-[#ffffff] bg-[#ffffff] btn-circle"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="w-5 h-5"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="2"
-                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                                        />
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="flex items-center gap-5 text-lg">
-                                <button
-                                    class="flex items-center gap-2 font-semibold"
-                                >
-                                    <i
-                                        class="fa-solid fa-cart-shopping btn btn-[#ffffff] btn-circle m-3 bg-[#ffffff]"
-                                    ></i>
-                                </button>
-                                <button
-                                    class="px-5 py-3 rounded-full text-black text-xl font-bold bg-[#ABEF5F]"
-                                >
-                                    <span>Book Consult</span>
-                                    <a
-                                        href="#"
-                                        class="px-2 py-1 text-center text-white bg-black rounded-full"
-                                        ><i
-                                            class="-rotate-45 fa-solid fa-arrow-right"
-                                        ></i>
-                                    </a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="navbar-end">
-                        <div class="dropdown">
-                            <div
-                                tabindex="0"
-                                role="button"
-                                class="btn btn-ghost lg:hidden"
-                            >
-                                <i class="fa-solid fa-bars"></i>
-                            </div>
-                            <ul
-                                tabindex="0"
-                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg font-medium right-0 gap-5"
-                            >
-                                <li
-                                    class="transition duration-300 ease-in-out hover:text-primary"
-                                >
-                                    <a>home</a>
-                                </li>
-                                <li
-                                    class="transition duration-300 ease-in-out hover:text-primary"
-                                >
-                                    <a>Services</a>
-                                </li>
-                                <li
-                                    class="transition duration-300 ease-in-out hover:text-primary"
-                                >
-                                    <a>Portfolio</a>
-                                </li>
-                                <li
-                                    class="transition duration-300 ease-in-out hover:text-primary"
-                                >
-                                    <a>Blogs</a>
-                                </li>
-                                <li
-                                    class="transition duration-300 ease-in-out hover:text-primary"
-                                >
-                                    <a>Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <!-- header end -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rinterio</title>
+		<!-- google font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+		<!-- font awsome cdn -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<!-- tailwind and daisyUI cdn -->
+		<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="bg-[#f4f4f4]">
+		<!-- header start -->
+		<header class="py-2 lg:py-24">
+			<nav class="w-10/12 mx-auto">
+				<div class="p-0 navbar">
+					<div class="navbar-start">
+						<a href="#" class="mx-4 px-2 py-1 text-center bg-[#ABEF5F] rounded-full"><i class="-rotate-45 fa-solid fa-arrow-right"></i> </a>
+						<h3 class="text-3xl tracking-wider font-bold text-[#212121]">Rinterio</h3>
+					</div>
+					<div class="hidden navbar-center lg:flex">
+						<ul class="px-1 text-lg font-medium menu menu-horizontal">
+							<li class="transition duration-300 ease-in-out text-stone-950">
+								<a>Home</a>
+							</li>
+							<li class="transition duration-300 ease-in-out text-stone-400">
+								<a>Services</a>
+							</li>
+							<li class="transition duration-300 ease-in-out text-stone-400">
+								<a>Portfolio</a>
+							</li>
+							<li class="transition duration-300 ease-in-out text-stone-400">
+								<a>Blogs</a>
+							</li>
+							<li class="transition duration-300 ease-in-out text-stone-400">
+								<a>Contact Us</a>
+							</li>
+						</ul>
+						<div class="flex items-center pl-32">
+							<div>
+								<button class="btn btn-[#ffffff] bg-[#ffffff] btn-circle">
+									<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+									</svg>
+								</button>
+							</div>
+							<div class="flex items-center gap-5 text-lg">
+								<button class="flex items-center gap-2 font-semibold">
+									<i class="fa-solid fa-cart-shopping btn btn-[#ffffff] btn-circle m-3 bg-[#ffffff]"></i>
+								</button>
+								<button class="px-5 py-3 rounded-full text-black text-xl font-bold bg-[#ABEF5F]">
+									<span>Book Consult</span>
+									<a href="#" class="px-2 py-1 text-center text-white bg-black rounded-full"><i class="-rotate-45 fa-solid fa-arrow-right"></i> </a>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="navbar-end">
+						<div class="dropdown">
+							<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+								<i class="fa-solid fa-bars"></i>
+							</div>
+							<ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg font-medium right-0 gap-5">
+								<li class="transition duration-300 ease-in-out hover:text-primary">
+									<a>home</a>
+								</li>
+								<li class="transition duration-300 ease-in-out hover:text-primary">
+									<a>Services</a>
+								</li>
+								<li class="transition duration-300 ease-in-out hover:text-primary">
+									<a>Portfolio</a>
+								</li>
+								<li class="transition duration-300 ease-in-out hover:text-primary">
+									<a>Blogs</a>
+								</li>
+								<li class="transition duration-300 ease-in-out hover:text-primary">
+									<a>Contact Us</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<!-- header end -->
 
-            <!-- banner start -->
-            <section
-                class="w-10/12 mx-auto flex flex-col items-center my-2 bg-[#f9f9f9]"
-            >
-                <div class="">
-                    <img src="./assets/banner.png" alt="banner image" />
-                </div>
-                <div class="text-center">
-                    <h1 class="py-5 text-6xl font-extrabold">
-                        A barn house of this design has a <br />
-                        striking appearance
-                    </h1>
-                    <p class="py-5">
-                        The barn house is charming with its combination of
-                        rustic style and modern touch. It has old wood, sleek
-                        <br />
-                        metal features, and big windows that let in plenty of
-                        natural light.
-                    </p>
-                    <button
-                        class="px-5 py-3 rounded-full text-black text-xl font-medium bg-[#ABEF5F80]"
-                    >
-                        <span>View details</span>
-                        <a
-                            href="#"
-                            class="text-black px-2 py-1 text-center bg-[#ABEF5F] rounded-full"
-                            ><i class="-rotate-45 fa-solid fa-arrow-right"></i>
-                        </a>
-                    </button>
-                </div>
-            </section>
-        </header>
-        <!-- banner end -->
+			<!-- banner start -->
+			<section class="w-10/12 mx-auto flex flex-col items-center my-2 bg-[#f9f9f9]">
+				<div class="">
+					<img src="./assets/banner.png" alt="banner image" />
+				</div>
+				<div class="text-center">
+					<h1 class="py-5 text-6xl font-extrabold">
+						A barn house of this design has a <br />
+						striking appearance
+					</h1>
+					<p class="py-5">
+						The barn house is charming with its combination of rustic style and modern touch. It has old wood, sleek
+						<br />
+						metal features, and big windows that let in plenty of natural light.
+					</p>
+					<button class="px-5 py-3 rounded-full text-black text-xl font-medium bg-[#ABEF5F80]">
+						<span>View details</span>
+						<a href="#" class="text-black px-2 py-1 text-center bg-[#ABEF5F] rounded-full"><i class="-rotate-45 fa-solid fa-arrow-right"></i> </a>
+					</button>
+				</div>
+			</section>
+		</header>
+		<!-- banner end -->
 
-        <!-- Liveable space -->
-        <main class="">
-            <img
-                class="hidden ms-10 lg:block"
-                src="./assets/Vector.png "
-                alt=""
-            />
-            <div
-                class="flex flex-col items-center w-10/12 mx-auto lg:gap-10 lg:my-10 lg:flex-row"
-            >
-                <div class="flex-1 text-center lg:text-start">
-                    <div class="py-10">
-                        <button
-                            class="py-3 px-10 text-xl bg-[#ffffff] rounded-full"
-                        >
-                            About US
-                        </button>
-                        <h1 class="py-5 text-5xl font-bold">
-                            We design thoughtful,<br />
-                            liveable spaces
-                        </h1>
-                        <p class="text-xl">
-                            The barn house fascinates with <br />
-                            its mix of country charm and modern refinement,
-                            <br />
-                            highlighting distressed wood and chic metal
-                            features.
-                        </p>
-                    </div>
+		<!-- Liveable space -->
+		<main class="">
+			<img class="hidden ms-10 lg:block" src="./assets/Vector.png " alt="" />
+			<div class="flex flex-col items-center w-10/12 mx-auto lg:gap-10 lg:my-10 lg:flex-row">
+				<div class="flex-1 text-center lg:text-start">
+					<div class="py-10">
+						<button class="py-3 px-10 text-xl bg-[#ffffff] rounded-full"><i class="mx-2 fa-solid fa-arrow-right"></i><span>About US</span></button>
+						<h1 class="py-5 text-5xl font-bold">
+							We design thoughtful,<br />
+							liveable spaces
+						</h1>
+						<p class="text-xl">
+							The barn house fascinates with <br />
+							its mix of country charm and modern refinement,
+							<br />
+							highlighting distressed wood and chic metal features.
+						</p>
+					</div>
 
-                    <div
-                        class="flex items-center gap-2 py-16 bg-[#ffffff] rounded-lg"
-                    >
-                        <div class="ms-5">
-                            <img
-                                class="w-full h-full"
-                                src="./assets/commercial.png"
-                                alt=""
-                            />
-                        </div>
-                        <div>
-                            <h3 class="text-2xl">Commercial</h3>
-                            <p class="text-lg">
-                                The barn house fascinates with its fusion of
-                                traditional charm and modern aesthetics
-                            </p>
-                        </div>
-                    </div>
-                    <div
-                        class="flex items-center gap-2 my-10 py-16 bg-[#ffffff] rounded-lg"
-                    >
-                        <div class="ms-5">
-                            <img
-                                class="w-full h-full"
-                                src="./assets/residential.png"
-                                alt=""
-                            />
-                        </div>
-                        <div>
-                            <h3 class="text-2xl">Residential</h3>
-                            <p class="text-lg">
-                                The barn house enchants with its combination of
-                                rustic allure and contemporary style.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex-1">
-                    <img
-                        class="w-full rounded-sm"
-                        src="./assets/Rectangle.png"
-                        alt=""
-                    />
-                </div>
-            </div>
-            <!-- liveable space end -->
+					<div class="flex items-center gap-2 py-16 bg-[#ffffff] rounded-lg">
+						<div class="ms-5">
+							<img class="w-full h-full" src="./assets/commercial.png" alt="" />
+						</div>
+						<div>
+							<h3 class="text-2xl">Commercial</h3>
+							<p class="text-lg">The barn house fascinates with its fusion of traditional charm and modern aesthetics</p>
+						</div>
+					</div>
+					<div class="flex items-center gap-2 my-10 py-16 bg-[#ffffff] rounded-lg">
+						<div class="ms-5">
+							<img class="w-full h-full" src="./assets/residential.png" alt="" />
+						</div>
+						<div>
+							<h3 class="text-2xl">Residential</h3>
+							<p class="text-lg">The barn house enchants with its combination of rustic allure and contemporary style.</p>
+						</div>
+					</div>
+				</div>
+				<div class="flex-1">
+					<img class="w-full rounded-sm" src="./assets/Rectangle.png" alt="" />
+				</div>
+			</div>
+			<!-- liveable space end -->
 
-            <!-- Reaction Section start -->
-            <section
-                class="w-10/12 gap-10 my-10 mx-auto py-10 text-center rounded-xl bg-[#ffffff]"
-            >
-                <div
-                    class="flex flex-col items-center justify-around lg:flex-row"
-                >
-                    <div>
-                        <span
-                            ><i
-                                class="text-4xl lg:text-5xl fa-regular fa-message"
-                            ></i
-                        ></span>
-                        <h2 class="py-3 text-4xl font-bold lg:text-5xl">
-                            235+
-                        </h2>
-                        <p class="text-2xl">Happ Client Review</p>
-                    </div>
-                    <div>
-                        <span
-                            ><i
-                                class="text-4xl lg:text-5xl fa-regular fa-square-check"
-                            ></i
-                        ></span>
-                        <h2 class="py-3 text-4xl font-bold lg:text-5xl">50+</h2>
-                        <p class="text-2xl">Work Departments</p>
-                    </div>
-                    <div>
-                        <span
-                            ><i
-                                class="text-4xl lg:text-5xl fa-solid fa-users-line"
-                            ></i
-                        ></span>
-                        <h2 class="py-3 text-4xl font-bold lg:text-5xl">
-                            235+
-                        </h2>
-                        <p class="text-2xl">Our Happ Client</p>
-                    </div>
-                    <div>
-                        <span
-                            ><i
-                                class="text-4xl lg:text-5xl fa-solid fa-user-group"
-                            ></i
-                        ></span>
-                        <h2 class="py-3 text-4xl font-bold lg:text-5xl">
-                            307K+
-                        </h2>
-                        <p class="text-2xl">Staff Members</p>
-                    </div>
-                </div>
-            </section>
+			<!-- Reaction Section start -->
+			<section class="w-10/12 gap-10 my-10 mx-auto py-10 text-center rounded-xl bg-[#ffffff]">
+				<div class="flex flex-col items-center justify-around lg:flex-row">
+					<div>
+						<span><i class="text-4xl lg:text-5xl fa-regular fa-message"></i></span>
+						<h2 class="py-3 text-4xl font-bold lg:text-5xl">235+</h2>
+						<p class="text-2xl">Happ Client Review</p>
+					</div>
+					<div>
+						<span><i class="text-4xl lg:text-5xl fa-regular fa-square-check"></i></span>
+						<h2 class="py-3 text-4xl font-bold lg:text-5xl">50+</h2>
+						<p class="text-2xl">Work Departments</p>
+					</div>
+					<div>
+						<span><i class="text-4xl lg:text-5xl fa-solid fa-users-line"></i></span>
+						<h2 class="py-3 text-4xl font-bold lg:text-5xl">235+</h2>
+						<p class="text-2xl">Our Happ Client</p>
+					</div>
+					<div>
+						<span><i class="text-4xl lg:text-5xl fa-solid fa-user-group"></i></span>
+						<h2 class="py-3 text-4xl font-bold lg:text-5xl">307K+</h2>
+						<p class="text-2xl">Staff Members</p>
+					</div>
+				</div>
+			</section>
 
-            <!-- Reaction section end -->
-        </main>
-    </body>
+			<!-- Reaction section end -->
+
+			<!-- Work process start -->
+			<section class="w-10/12 mx-auto">
+				<div class="grid grid-cols-1 gap-5 rounded-xl">
+					<div class="text-center">
+						<button class="py-2 px-10 text-xl bg-[#ffffff]"><i class="mx-2 fa-solid fa-arrow-right"></i><span>How We Works</span></button>
+						<h3 class="text-5xl font-bold">Our Works Process</h3>
+						<p class="text-xl">
+							The barn house enchants with its combination of rustic appeal and contemporary elegance, <br />
+							showcasing aged wood alongside stylish metal details.
+						</p>
+					</div>
+					<div class="grid grid-cols-1 gap-5 lg:grid-cols-4">
+						<div class="bg-[#E7C1D3] p-6 rounded-3xl">
+							<img src="./assets/concept.png" alt="" />
+							<h3 class="text-2xl font-semibold">Concept</h3>
+							<p>
+								The barn house fascinates with its <br />
+								combination of rustic charm and modern design.
+							</p>
+						</div>
+						<div class="bg-[#EFDA6E] p-5 rounded-3xl">
+							<img src="./assets/flow-chart.png" alt="" />
+							<h3 class="text-3xl font-semibold">Concept</h3>
+							<p>
+								The barn house fascinates with its <br />
+								combination of rustic charm and modern design.
+							</p>
+						</div>
+						<div class="bg-[#A4DAC3] p-5 rounded-3xl">
+							<img src="./assets/vision.png" alt="" />
+							<h3 class="text-3xl font-semibold">Concept</h3>
+							<p>
+								The barn house fascinates with its <br />
+								combination of rustic charm and modern design.
+							</p>
+						</div>
+						<div class="bg-[#77AAEA] p-5 rounded-3xl">
+							<img src="./assets/budget-planning.png" alt="" />
+							<h3 class="text-2xl font-semibold">Concept</h3>
+							<p>
+								The barn house fascinates with its <br />
+								combination of rustic charm and modern design.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Work process en -->
+		</main>
+	</body>
 </html>

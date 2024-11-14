@@ -27,18 +27,16 @@
         />
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body
-        class="bg-gradient-to-r from-rgb(255, 255, 255) to-rgba(255, 255, 255, 0)"
-    >
+    <body class="bg-[#f4f4f4]">
         <!-- header start -->
-        <header>
-            <nav class="w-11/12 mx-auto">
+        <header class="py-2 lg:py-24">
+            <nav class="w-10/12 mx-auto">
                 <div class="p-0 navbar">
                     <div class="navbar-start">
                         <a
                             href="#"
                             class="mx-4 px-2 py-1 text-center bg-[#ABEF5F] rounded-full"
-                            ><i class="fa-solid fa-arrow-right -rotate-45"></i>
+                            ><i class="-rotate-45 fa-solid fa-arrow-right"></i>
                         </a>
                         <h3
                             class="text-3xl tracking-wider font-bold text-[#212121]"
@@ -78,7 +76,9 @@
                         </ul>
                         <div class="flex items-center pl-32">
                             <div>
-                                <button class="btn btn-[#ffffff] btn-circle">
+                                <button
+                                    class="btn btn-[#ffffff] bg-[#ffffff] btn-circle"
+                                >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         class="w-5 h-5"
@@ -97,10 +97,10 @@
                             </div>
                             <div class="flex items-center gap-5 text-lg">
                                 <button
-                                    class="flex items-center gap-2 font-semibold text-gray-500"
+                                    class="flex items-center gap-2 font-semibold"
                                 >
                                     <i
-                                        class="fa-solid fa-cart-shopping btn btn-[#ffffff] btn-circle m-3"
+                                        class="fa-solid fa-cart-shopping btn btn-[#ffffff] btn-circle m-3 bg-[#ffffff]"
                                     ></i>
                                 </button>
                                 <button
@@ -109,9 +109,9 @@
                                     <span>Book Consult</span>
                                     <a
                                         href="#"
-                                        class="text-white px-2 py-1 text-center bg-black rounded-full"
+                                        class="px-2 py-1 text-center text-white bg-black rounded-full"
                                         ><i
-                                            class="fa-solid fa-arrow-right -rotate-45"
+                                            class="-rotate-45 fa-solid fa-arrow-right"
                                         ></i>
                                     </a>
                                 </button>
@@ -164,12 +164,14 @@
             <!-- header end -->
 
             <!-- banner start -->
-            <section class="w-11/12 mx-auto flex flex-col items-center py-5">
+            <section
+                class="w-10/12 mx-auto flex flex-col items-center my-2 bg-[#f9f9f9]"
+            >
                 <div class="">
                     <img src="./assets/banner.png" alt="banner image" />
                 </div>
                 <div class="text-center">
-                    <h1 class="text-6xl font-extrabold py-5">
+                    <h1 class="py-5 text-6xl font-extrabold">
                         A barn house of this design has a <br />
                         striking appearance
                     </h1>
@@ -187,11 +189,144 @@
                         <a
                             href="#"
                             class="text-black px-2 py-1 text-center bg-[#ABEF5F] rounded-full"
-                            ><i class="fa-solid fa-arrow-right -rotate-45"></i>
+                            ><i class="-rotate-45 fa-solid fa-arrow-right"></i>
                         </a>
                     </button>
                 </div>
             </section>
         </header>
+        <!-- banner end -->
+
+        <!-- Liveable space -->
+        <main class="">
+            <img
+                class="hidden ms-10 lg:block"
+                src="./assets/Vector.png "
+                alt=""
+            />
+            <div
+                class="flex flex-col items-center w-10/12 mx-auto lg:gap-10 lg:my-10 lg:flex-row"
+            >
+                <div class="flex-1 text-center lg:text-start">
+                    <div class="py-10">
+                        <button
+                            class="py-3 px-10 text-xl bg-[#ffffff] rounded-full"
+                        >
+                            About US
+                        </button>
+                        <h1 class="py-5 text-5xl font-bold">
+                            We design thoughtful,<br />
+                            liveable spaces
+                        </h1>
+                        <p class="text-xl">
+                            The barn house fascinates with <br />
+                            its mix of country charm and modern refinement,
+                            <br />
+                            highlighting distressed wood and chic metal
+                            features.
+                        </p>
+                    </div>
+
+                    <div
+                        class="flex items-center gap-2 py-16 bg-[#ffffff] rounded-lg"
+                    >
+                        <div class="ms-5">
+                            <img
+                                class="w-full h-full"
+                                src="./assets/commercial.png"
+                                alt=""
+                            />
+                        </div>
+                        <div>
+                            <h3 class="text-2xl">Commercial</h3>
+                            <p class="text-lg">
+                                The barn house fascinates with its fusion of
+                                traditional charm and modern aesthetics
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex items-center gap-2 my-10 py-16 bg-[#ffffff] rounded-lg"
+                    >
+                        <div class="ms-5">
+                            <img
+                                class="w-full h-full"
+                                src="./assets/residential.png"
+                                alt=""
+                            />
+                        </div>
+                        <div>
+                            <h3 class="text-2xl">Residential</h3>
+                            <p class="text-lg">
+                                The barn house enchants with its combination of
+                                rustic allure and contemporary style.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <img
+                        class="w-full rounded-sm"
+                        src="./assets/Rectangle.png"
+                        alt=""
+                    />
+                </div>
+            </div>
+            <!-- liveable space end -->
+
+            <!-- Reaction Section start -->
+            <section
+                class="w-10/12 gap-10 my-10 mx-auto py-10 text-center rounded-xl bg-[#ffffff]"
+            >
+                <div
+                    class="flex flex-col items-center justify-around lg:flex-row"
+                >
+                    <div>
+                        <span
+                            ><i
+                                class="text-4xl lg:text-5xl fa-regular fa-message"
+                            ></i
+                        ></span>
+                        <h2 class="py-3 text-4xl font-bold lg:text-5xl">
+                            235+
+                        </h2>
+                        <p class="text-2xl">Happ Client Review</p>
+                    </div>
+                    <div>
+                        <span
+                            ><i
+                                class="text-4xl lg:text-5xl fa-regular fa-square-check"
+                            ></i
+                        ></span>
+                        <h2 class="py-3 text-4xl font-bold lg:text-5xl">50+</h2>
+                        <p class="text-2xl">Work Departments</p>
+                    </div>
+                    <div>
+                        <span
+                            ><i
+                                class="text-4xl lg:text-5xl fa-solid fa-users-line"
+                            ></i
+                        ></span>
+                        <h2 class="py-3 text-4xl font-bold lg:text-5xl">
+                            235+
+                        </h2>
+                        <p class="text-2xl">Our Happ Client</p>
+                    </div>
+                    <div>
+                        <span
+                            ><i
+                                class="text-4xl lg:text-5xl fa-solid fa-user-group"
+                            ></i
+                        ></span>
+                        <h2 class="py-3 text-4xl font-bold lg:text-5xl">
+                            307K+
+                        </h2>
+                        <p class="text-2xl">Staff Members</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reaction section end -->
+        </main>
     </body>
 </html>
